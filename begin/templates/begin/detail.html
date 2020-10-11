@@ -1,0 +1,26 @@
+{% extends "begin/base.html" %}
+{% block content %}
+<div class="content" style="text-align:centre;">
+    <h1><b>You Relate Any Of This Symptom</b></h1>
+    <p>1.Excessive Worrying</p>
+    <p>2.Feeling Agitated</p>
+    <p>3. Restlessness</p>
+    <p>4.Fatigue</p>
+    <p>5.Difficulty Concentrating</p>
+    <p>6. Irritability</p>
+    <p>7.Trouble Falling or Staying Asleep</p>
+
+    <h2>Select The Symptom You Relate</h2>
+    <input type="radio" name="symptom"/>1
+    <input type="radio" name="symptom"/>2
+    <input type="radio" name="symptom"/>3
+    <input type="radio" name="symptom"/>4
+    <input type="radio" name="symptom"/>5
+    <input type="radio" name="symptom"/>6
+    <input type="radio" name="symptom"/>7
+
+</div>
+<div class="button">
+    <button type="submit" name="button"><a href="{% url 'advice' %}">Submit</a></button>
+</div>
+{% endblock %}

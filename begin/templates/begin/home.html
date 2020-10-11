@@ -1,0 +1,15 @@
+{% extends "begin/base.html" %}
+{% block content %}
+<div class="content" style="margin-top:10%">
+    <h1><b> Are You Worried ? </b></h1>
+    <br>
+    <input type="radio" name="service"/> YES
+    <input type="radio" name="service"/> NO
+    <input type="submit" name="submit" value="submit"/>
+</div>
+<div style="text-align:centre;">
+    <textarea name="comments" cols="30" rows="4" style="margin-top:5;" placeholder="Enter Your Feelings"></textarea>
+    <button type="submit" name="button"><a href="{% url 'detail' %}"> Next </a></button>
+
+</div>
+{% endblock %}
